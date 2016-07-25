@@ -1,7 +1,81 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'adonis';
+.top-container{
+background: lightblue;
+  &__inner{
+    max-width: 60rem;
+    margin: auto;
+  }
+}
+
+.form-container{
+
+  &__inner{
+    max-width: 60rem;
+    margin: auto;
+  }
+}
+.upform{
+  display: flex;
+  flex-direction: column;
+  &__url{
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  &__caption{
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  &__cancel{
+
+  }
+  &__submit{
+
+      background: #17aa56;
+  }
+}
+.btn{
+  font-size: 1.5rem;
+    border: none;
+    padding:1rem .5rem;
+    border-radius:1rem;
+}
+
+.btn-container{
+margin: 1rem;
+text-align: right;
+}
+
+.main-container{
+background: #edeeef;
+  &__inner{
+background: #d9d9da;
+    max-width: 60rem;
+    margin:auto;
+    padding: 10%;
+  }
+}
+.card{
+  // padding:5rem;
+// background: yellow;
+  // max-width: 40rem;
+  margin: auto;
+  // border: yellow 1rem solid;
+  filter: drop-shadow(0px 1px 3px rgba(0,0,0,.6));
+min-width:20rem;
+  &-img{
+    width: 100%;
+  }
+  &-caption{
+    padding:1rem;
+    background: white;
+  }
+}
+.plus{
+font-size: 2rem;
+}
