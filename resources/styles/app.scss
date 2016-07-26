@@ -23,12 +23,17 @@ background: lightblue;
 .upform{
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+
+  &--active{
+    height: 100px;
+  }
   &__url{
-    margin: 1rem;
+    margin: 1rem 0;
     font-size: 1rem;
   }
   &__caption{
-    margin: 1rem;
+    margin: 1rem 0;
     font-size: 1rem;
   }
   &__cancel{
@@ -44,10 +49,11 @@ background: lightblue;
     border: none;
     padding:1rem .5rem;
     border-radius:1rem;
+    margin-left: 1rem;
 }
 
 .btn-container{
-margin: 1rem;
+margin: 1rem 0;
 text-align: right;
 }
 
