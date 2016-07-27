@@ -1,0 +1,37 @@
+{% extends 'master' %}
+{% block content %}
+<div class="top-container">
+  <div class="top-container__inner">
+    <h2 class="plus">+</h2>
+  </div>
+</div>
+<div class="form-container">
+  <div class="form-container__inner">
+<form action='/photos' method = "POST" class="upform">
+  {{csrfField}}
+  <input class="upform__url" type="text" name="url" placeholder="Photo URL">
+<textarea class="upform__caption"  placeholder="Photo Caption"type="text" name="caption"rows="5" cols="40"></textarea>
+<div class="btn-container">
+<button type="button"class="upform__cancel btn">Cancel</button>
+<button type="submit" class="upform__submit btn">Add Image</button>
+</div>
+</form>
+  </div>
+
+</div>
+<div class="main-container">
+<div class="main-container__inner">
+  {% for photo in photos %}
+  <div class="card">
+
+  <img class="card-img" src="{{photo.url}}" alt="" />
+  <p class="card-caption">
+{{photo.caption}}  </p>
+</div>
+  {% endfor %}
+</div>
+
+  </div>
+
+</div>
+{% endblock %}
