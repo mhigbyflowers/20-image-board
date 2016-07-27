@@ -21,13 +21,14 @@
 </div>
 <div class="main-container">
 <div class="main-container__inner">
+  {% for photo in photos %}
   <div class="card">
 
-  <img class="card-img" src="{{url}}" alt="" />
+  <img class="card-img" src="{{photo.url}}" alt="" />
   <p class="card-caption">
-{{caption}}  </p>
+{{photo.caption}}  </p>
 </div>
-
+  {% endfor %}
 </div>
 
   </div>
